@@ -135,7 +135,7 @@ class Executor(TypeVersionEnabled):
             for c in replace_chars:
                 executor_id_ = executor_id_.replace(c, "_")
         return executor_id_
-
+    # YW_READ
     def run(self, **kwargs):
         """
         Do all the computation here.
@@ -391,6 +391,7 @@ class Executor(TypeVersionEnabled):
 
             self._prepare_log_file(asset)
 
+            # YW_READ
             self._generate_result(asset)
 
             if self.logger:

@@ -189,6 +189,7 @@ class ExternalProgramCaller(object):
 
         if logger:
             logger.info(' '.join(cmd))
+            # YW_READ
         run_process(' '.join(cmd), shell=True)
 
     @staticmethod

@@ -40,6 +40,7 @@ enum VmafFeatureExtractorFlags {
     VMAF_FEATURE_FRAME_SYNC = 1 << 2,
 };
 
+// YW_READ_FE
 typedef struct VmafFeatureExtractor {
     const char *name; ///< Name of feature extractor.
     /**

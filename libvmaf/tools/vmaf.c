@@ -70,6 +70,8 @@ static int validate_videos(video_input *vid1, video_input *vid2, bool common_bit
 
 static int fetch_picture(video_input *vid, VmafPicture *pic, int depth)
 {
+
+    // YW_READ_PICTURE
     int ret;
     video_input_ycbcr ycbcr;
     video_input_info info;
@@ -390,6 +392,7 @@ int main(int argc, char *argv[])
             break;
 
         VmafPicture pic_ref, pic_dist;
+        // YW_C_READ
         int ret1 = fetch_picture(&vid_ref, &pic_ref, common_bitdepth);
         int ret2 = fetch_picture(&vid_dist, &pic_dist, common_bitdepth);
 

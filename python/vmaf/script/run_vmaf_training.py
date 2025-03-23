@@ -5,7 +5,7 @@ matplotlib.use('Agg')
 
 import os
 import sys
-
+sys.path.append('/home/bowen/Documents/TIP-HDR/vmaf_HDR/python')
 import numpy as np
 from vmaf.config import DisplayConfig
 

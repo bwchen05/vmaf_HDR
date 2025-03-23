@@ -69,6 +69,8 @@ class FeatureAssembler(object):
         # of FeatureExtractor, run, and put results in a dict
         for fextractor_type in self.feature_dict:
             runner = self._get_fextractor_instance(fextractor_type)
+            # println("YW" + runner.TYPE)
+            # print("YW" + fextractor_type)
             runner.run(parallelize=self.parallelize, processes=self.processes)
             results = runner.results
             self.type2results_dict[fextractor_type] = results
